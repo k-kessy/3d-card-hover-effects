@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Hover Card</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <h2 class="name">Программы развития</h2>
+            <a href="#" class="select">Перейти</a> 
+            <img src="./images/-- image 1.png" class="image">
+        </div>
+        <div class="box box-2">
+            <h2 class="name">Отчеты</h2>
+            <a href="#" class="select">Перейти</a> 
+            <img src="./images/-- image 2.png" class="image">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5
+	});
+    </script>
+</body>
+</html>
